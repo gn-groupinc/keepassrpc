@@ -175,6 +175,7 @@ namespace KeePassRPC.DataExchangeModel
         public string UniqueID;
         public string IconImageData;
         public string Path;
+        public string Notes;
 
         public Group[] ChildGroups;
         public Entry[] ChildEntries;
@@ -185,12 +186,14 @@ namespace KeePassRPC.DataExchangeModel
         public Group(string title,
         string uniqueID,
         string iconImageData,
-        string path)
+        string path,
+        string notes)
         {
             Title = title;
             UniqueID = uniqueID;
             IconImageData = iconImageData;
             Path = path;
+            Notes = notes;
         }
     }
 
